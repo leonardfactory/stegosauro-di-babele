@@ -4,6 +4,7 @@ import {
   translateStegoToString
 } from "../translate/StegoTranslate";
 import "./StegoContainer.css";
+import { StegoText } from "./StegoText";
 
 export class StegoContainer extends React.Component {
   state = {
@@ -21,7 +22,9 @@ export class StegoContainer extends React.Component {
     return (
       <div className="StegoContainer">
         <div className="intro">
-          <div className="intro-title animated tada delay-3s">🦖🦕!</div>
+          <div className="intro-title animated tada delay-3s">
+            <StegoText text="🦖🦕!" />
+          </div>
         </div>
         <input
           type="text"
@@ -32,14 +35,17 @@ export class StegoContainer extends React.Component {
         <p className="description">
           Credo che in stegosaurese suoni più o meno così...
         </p>
-        <p className="data">{stego}</p>
+        <p className="data">
+          <StegoText text={stego} />
+        </p>
         <p className="description">
           Anche se potrebbe voler dire, dato che lo stegosaurese è contestuale,
           una qualsiasi delle seguenti frasi ad esempio:
         </p>
         <p className="data">
-          {translateStegoToString(stego)} <br /> {translateStegoToString(stego)}{" "}
-          <br /> {translateStegoToString(stego)}
+          <StegoText text={translateStegoToString(stego)} /> <br />{" "}
+          <StegoText text={translateStegoToString(stego)} /> <br />{" "}
+          <StegoText text={translateStegoToString(stego)} />
         </p>
       </div>
     );
