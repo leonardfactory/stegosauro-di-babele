@@ -1,0 +1,59 @@
+.StegoContainer {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.StegoContainer .intro {
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+}
+
+.StegoContainer .intro-title {
+  display: inline-block;
+}
+
+.StegoContainer input[type="text"] {
+  border-radius: 16px;
+  background-color: white;
+  color: rgba(48, 51, 107, 1);
+  border: 0;
+  padding: 8px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 40px 2px rgba(199, 236, 238, 0.66);
+  -moz-box-shadow: 0px 0px 40px 2px rgba(199, 236, 238, 0.66);
+  box-shadow: 0px 0px 40px 2px rgba(199, 236, 238, 0.66);
+}
+
+.StegoContainer input[type="text"]:focus {
+  outline: none;
+}
+
+.StegoContainer p {
+  margin: 0.3rem;
+}
+
+.StegoContainer p.help {
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+  text-align: right;
+  color: #be2edd;
+}
+
+.StegoContainer p.description {
+  font-size: 1.2rem;
+  padding-top: 3rem;
+  padding-bottom: 0.4rem;
+  color: #30336b;
+  opacity: 0.7;
+}
+
+.StegoContainer p.data {
+  background-color: rgba(223, 249, 251, 1);
+  border-radius: 16px;
+  color: rgba(48, 51, 107, 1);
+  padding: 0.4rem;
+  line-height: 1.5;
+}
